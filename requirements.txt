@@ -1,0 +1,7 @@
+flask
+flask_restful
+flask_script
+flask_sslify
+requests
+requests_oauthlib 
+gunicorn
