@@ -8,6 +8,7 @@ from flask_sslify import SSLify
 
 app = Flask(__name__)
 sslify = SSLify(app)
+app.secret_key = "ac5f2ef726924e9c5f54a4f06e11b0a57520168b"
 
 # This information is obtained upon registration of a new GitHub
 client_id = "9a59e1f11d118349d595"
