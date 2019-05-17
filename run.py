@@ -2,13 +2,12 @@
 from requests_oauthlib import OAuth2Session
 from flask import Flask, request, redirect, session, url_for
 from flask.json import jsonify
-import os
 from flask_sslify import SSLify
 
 
 app = Flask(__name__)
 sslify = SSLify(app)
-app.secret_key = "ac5f2ef726924e9c5f54a4f06e11b0a57520168b"
+
 
 # This information is obtained upon registration of a new GitHub
 client_id = "9a59e1f11d118349d595"
@@ -65,7 +64,7 @@ def profile():
 
 if __name__ == "__main__":
     # This allows us to use a plain HTTP callback
-    os.environ['DEBUG'] = "1"
+    #os.environ['DEBUG'] = "1"
 
-    app.secret_key = os.urandom(24)
-    app.run(host= "testhuthuboauth.herokuapp.com", port=80, debug=True)
+    app.secret_key = "ac5f2ef726924e9c5f54a4f06e11b0a57520168b"
+    app.run(host= "testgithuboauth.herokuapp.com", port=80, debug=True)
