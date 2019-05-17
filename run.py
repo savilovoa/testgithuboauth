@@ -68,4 +68,4 @@ if __name__ == "__main__":
     os.environ['DEBUG'] = "1"
 
     app.secret_key = os.urandom(24)
-    app.run(host= "testhuthuboauth.herokuapp.com", debug=True)
+    app.run(host= "testhuthuboauth.herokuapp.com", port=80, debug=True)
